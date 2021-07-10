@@ -1,0 +1,106 @@
+/*footer*/
+footer {
+  background-color: var(--dark-background-color);
+  color: var(--white-color);
+}
+
+.footer-contacts {
+  margin-right: 70px;
+}
+
+.connect__title,
+.sign-form__title {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.17;
+    margin-bottom: 20px;
+    margin-top: 12px;
+    letter-spacing: 0.03em;
+  }
+
+.address__link {
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    transition: color 250ms;
+}
+
+.address__post-address {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.address,
+.address__item--style {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-style: normal;
+}
+
+.address__list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.address__item {
+  margin-bottom: 9px;
+  color: var(--white-color);
+  display: inline-block;
+  min-width: 100%;
+
+    &--style:hover,
+    &--style:focus {
+      color: var(--accent-text-color);
+      transform: var(--cubic);
+  }
+
+    &:last-child {
+      margin-bottom: 0px;
+      padding-bottom: 60px;
+    } 
+
+    &--style {
+      text-align: left;
+      text-decoration: none;
+      color: inherit;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.71;
+      transition: color 250ms;
+    } 
+}
+
+.sign-form {
+  margin-left: 93px;
+
+  &__input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    min-width: 358px;
+    min-height: 50px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    background-color: inherit;
+    padding-left: 16px;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: center;
+  }
+}
+  
+
+  

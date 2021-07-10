@@ -1,0 +1,61 @@
+/*Список соц-сетей в секции Команда*/
+.social-links {
+    display: flex;
+    padding-left: 0px;
+    justify-content: center;
+    padding-bottom: 30px;
+
+  &__icon {
+    fill: #afb1b8;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  } 
+}
+ 
+.social-links__link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 250ms;
+
+    &:hover .social-links__icon,
+    &:focus .social-links__icon {
+       fill: var(--white-color);
+     }
+
+    &__link:hover,
+    &__link:focus {
+      background-color: var(--accent-text-color);
+      transform: var(--cubic);
+  } 
+ }
+ 
+/*Список соц-сетей в Футере*/
+   
+.social-links {
+    margin: 0;
+
+    &__link {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      transition: background-color 250ms;
+    }
+    
+    &__icon-footer {
+      fill: var(--white-color);
+    }
+    
+    &__link:hover,
+    &__link:focus {
+      background-color: var(--accent-text-color);
+      transform: var(--cubic);
+    }
+  }
+  
+  

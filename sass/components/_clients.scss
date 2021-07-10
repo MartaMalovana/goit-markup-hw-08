@@ -1,0 +1,47 @@
+ 
+.clients {
+    padding-top: 94px;
+
+    &__title {
+      margin: 0 auto 50px;
+      text-align: center;
+      color: var(--secondary-text-color);
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.17;
+    }
+    
+    &__list {
+      display: flex;
+      margin-top: 0;
+      margin: 0 auto 94px;
+      padding-left: 0;
+      justify-content: center;
+    }
+  }  
+
+.clients__link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #afb1b8;
+    transition: fill 250ms;
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-text-color);
+      border-color: var(--accent-text-color);
+      transform: var(--cubic);
+    }
+  }
+  
+.clients__item:last-child {
+    margin-right: 0;
+  }
+  
+ 

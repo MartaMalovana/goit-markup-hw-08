@@ -1,0 +1,39 @@
+/*hero*/
+.hero {
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #c4c4c4;
+    color: var(--white-color);
+    letter-spacing: 0.06em;
+
+    @media  screen and (min-width: 480px) {
+      width: 480px;
+      heigth: 400px;
+      background-image: url("../images/header-mobile.jpg");
+    }
+
+    &__title {
+      text-align: center;
+      padding-right: 20px;
+      padding-left: 20px;
+      margin: 0 auto 30px;
+      max-width: 696px;
+      height: 120px;
+      font-size: 44px;
+      font-weight: 900;
+      line-height: 1.36;
+    }
+  }
+  
+
+  
