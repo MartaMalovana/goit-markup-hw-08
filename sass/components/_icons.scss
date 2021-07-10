@@ -3,7 +3,6 @@
     display: flex;
     padding-left: 0px;
     justify-content: center;
-    padding-bottom: 30px;
 
   &__icon {
     fill: #afb1b8;
@@ -55,6 +54,10 @@
     &__link:focus {
       background-color: var(--accent-text-color);
       transform: var(--cubic);
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px)  {
+      margin-bottom: 60px;
     }
   }
   

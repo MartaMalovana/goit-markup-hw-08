@@ -23,7 +23,7 @@ body {
   margin: 0px auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     width: 480px;
   }
@@ -36,18 +36,58 @@ body {
   align-items: center;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container--header {
+    height: 60px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
 .container--hero {
   padding-top: 200px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container--hero {
+    padding-top: 118px;
+    width: 480px;
+    height: 400px;
+  }
 }
 
 .container--advantages {
   margin-bottom: 94px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container--advantages {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container--team {
+    width: auto;
+    display: block;
+  }
+}
+
+.container--clients {
+  width: auto;
+}
+
 .container--footer {
   display: flex;
   padding-top: 60px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container--footer {
+    display: block;
+  }
 }
 
 ul {
@@ -58,11 +98,23 @@ header {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  header {
+    height: 60px;
+  }
+}
+
 /*site-nav*/
 .site-nav {
   display: flex;
   align-items: center;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
 }
 
 .site-nav-list {
@@ -113,6 +165,12 @@ header {
   margin: 0px 0px 0px auto;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
+
 .contacts__link {
   display: inline-block;
   margin-top: 32px;
@@ -161,10 +219,19 @@ header {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .logo__web {
   color: var(--accent-text-color);
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.174;
+    margin: 0;
+  }
 }
 
 /*Лого футер*/
@@ -176,13 +243,21 @@ header {
   color: var(--white-color);
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .address__logo {
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 1.174;
+  }
+}
+
 /*hero*/
 .hero {
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #c4c4c4;
@@ -190,11 +265,12 @@ header {
   letter-spacing: 0.06em;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .hero {
     width: 480px;
-    heigth: 400px;
+    height: 400px;
     background-image: url("../images/header-mobile.jpg");
+    background-size: contain;
   }
 }
 
@@ -208,6 +284,16 @@ header {
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.615;
+    padding: 0;
+    height: auto;
+    width: 360px;
+  }
 }
 
 /*Кнопка Героя*/
@@ -256,6 +342,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .sign-form__button {
+    margin: 0 auto 60px;
+  }
 }
 
 .sign-form__icon {
@@ -335,7 +427,7 @@ header {
 }
 
 /*advantages*/
-.advantages-title {
+.advantages-list__title {
   display: inline-block;
   text-align: left;
   width: 270px;
@@ -348,6 +440,13 @@ header {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .advantages-list__title {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .advantages-list {
   display: flex;
   margin-top: 0px;
@@ -356,6 +455,15 @@ header {
   margin-bottom: 94px;
   padding-left: 0px;
   padding-top: 94px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .advantages-list {
+    padding-top: 60px;
+    width: 480px;
+    display: block;
+    margin: 0 0 60px 0;
+  }
 }
 
 .advantages-list__icon {
@@ -368,6 +476,12 @@ header {
   align-items: center;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .advantages-list__icon {
+    width: auto;
+  }
+}
+
 .advantages-list__text {
   width: 270px;
   height: 75px;
@@ -377,8 +491,23 @@ header {
   line-height: 1.71;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .advantages-list__text {
+    width: 100%;
+    text-align: left;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
+
 .advantages-list__item:not(:last-child) {
   margin-right: 30px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .advantages-list__item:not(:last-child) {
+    margin-right: 0;
+  }
 }
 
 /*sevices*/
@@ -454,6 +583,12 @@ header {
   margin: 0;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .services {
+    display: none;
+  }
+}
+
 /*team*/
 .team {
   background-color: #f5f4fa;
@@ -472,13 +607,29 @@ header {
   line-height: 1.19;
 }
 
-.team-item {
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .team__member-name {
+    line-height: 1.171;
+  }
+}
+
+.team__item {
   width: 270px;
   margin-right: 30px;
+  padding-bottom: 30px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   background-color: var(--white-color);
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .team__item {
+    width: 450px;
+    padding-bottom: 24px;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
 }
 
 .team__title {
@@ -488,6 +639,13 @@ header {
   color: var(--secondary-text-color);
   font-size: 36px;
   line-height: 1.17;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .team__title {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
 }
 
 .team__list {
@@ -500,8 +658,22 @@ header {
   padding-left: 0px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .team__list {
+    display: block;
+    padding-bottom: 60px;
+  }
+}
+
 .team__member-photo {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .team__member-photo {
+    width: 450px;
+    height: 460px;
+  }
 }
 
 .team__member-profession {
@@ -515,12 +687,24 @@ header {
   line-height: 1.19;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .team__member-profession {
+    line-height: 1.171;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .team {
+    padding-top: 60px;
+  }
+}
+
 /*Список соц-сетей в секции Команда*/
 .social-links {
   display: flex;
   padding-left: 0px;
   justify-content: center;
-  padding-bottom: 30px;
 }
 
 .social-links__icon {
@@ -572,6 +756,12 @@ header {
   transform: var(--cubic);
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .social-links {
+    margin-bottom: 60px;
+  }
+}
+
 .clients {
   padding-top: 94px;
 }
@@ -585,12 +775,33 @@ header {
   line-height: 1.17;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .clients__title {
+    margin-bottom: 15px;
+    font-size: 28px;
+  }
+}
+
 .clients__list {
   display: flex;
   margin-top: 0;
   margin: 0 auto 94px;
   padding-left: 0;
   justify-content: center;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .clients {
+    padding-top: 60px;
+  }
 }
 
 .clients__link {
@@ -612,6 +823,12 @@ header {
   transform: var(--cubic);
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .clients__link {
+    margin: 15px;
+  }
+}
+
 .clients__item:last-child {
   margin-right: 0;
 }
@@ -626,6 +843,15 @@ footer {
   margin-right: 70px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer-contacts {
+    margin: 0 auto 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .connect__title,
 .sign-form__title {
   font-weight: 700;
@@ -635,6 +861,13 @@ footer {
   margin-bottom: 20px;
   margin-top: 12px;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .connect__title {
+    text-align: center;
+    font-size: 16px;
+  }
 }
 
 .address__link {
@@ -665,8 +898,14 @@ footer {
 .address__list {
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-left: 0px;
-  padding-left: 0px;
+  margin-left: auto;
+  padding-left: auto;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .address__list {
+    padding-left: 0;
+  }
 }
 
 .address__item {
@@ -686,6 +925,12 @@ footer {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .address__item:last-child {
+    padding-bottom: 0;
+  }
+}
+
 .address__item--style {
   text-align: left;
   text-decoration: none;
@@ -694,6 +939,13 @@ footer {
   font-weight: 400;
   line-height: 1.71;
   transition: color 250ms;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .address__item {
+    text-align: center;
+    line-height: 1.714;
+  }
 }
 
 .sign-form {
@@ -714,9 +966,31 @@ footer {
   padding-left: 16px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .sign-form__input {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}
+
 .sign-form__block {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .sign-form__block {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .sign-form {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 /*filters portfolio*/

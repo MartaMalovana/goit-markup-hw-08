@@ -1,5 +1,9 @@
 header {
     border-bottom: 1px solid #ececec;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      height: 60px;
+    }
   }
 
 /*site-nav*/
@@ -7,6 +11,10 @@ header {
     display: flex;
     align-items: center;
     margin-right: auto;
+    
+    @media screen and (min-width: 480px) and (max-width: 767px)  {
+      display: none;
+    }
   }
   
 .site-nav-list {
@@ -56,6 +64,10 @@ header {
   display: flex;
   padding-left: 0px;
   margin: 0px 0px 0px auto;
+  
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      display: none;
+  }
 
   &__link {
     display: inline-block;
@@ -94,5 +106,3 @@ header {
     transition: fill 250ms;
   }
 }
-
-

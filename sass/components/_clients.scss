@@ -9,6 +9,11 @@
       font-weight: 700;
       font-size: 36px;
       line-height: 1.17;
+
+      @media screen and (min-width: 480px) and (max-width: 767px)  {
+        margin-bottom: 15px;
+        font-size: 28px;
+      }
     }
     
     &__list {
@@ -17,6 +22,16 @@
       margin: 0 auto 94px;
       padding-left: 0;
       justify-content: center;
+
+       @media screen and (min-width: 480px) and (max-width: 767px)  {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+      }
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px)  {
+      padding-top: 60px;
     }
   }  
 
@@ -37,6 +52,10 @@
       fill: var(--accent-text-color);
       border-color: var(--accent-text-color);
       transform: var(--cubic);
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px)  {
+      margin: 15px;
     }
   }
   

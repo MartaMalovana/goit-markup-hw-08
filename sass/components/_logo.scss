@@ -11,9 +11,16 @@
     font-size: 26px;
     font-weight: 700;
     line-height: 1.19;
+    letter-spacing: 0.03em;
 
     &__web {
       color: var(--accent-text-color);
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px)   {
+      font-size: 24px;
+      line-height: 1.174;
+      margin: 0;
     }
   }
   
@@ -24,4 +31,11 @@
     margin-right: auto;
     margin-left: 0px;
     color: var(--white-color);
+
+    @media screen and (min-width: 480px) and (max-width: 767px)  {
+     margin-right: auto;
+     margin-left: auto;
+     line-height: 1.174;
+      
+    }
 }

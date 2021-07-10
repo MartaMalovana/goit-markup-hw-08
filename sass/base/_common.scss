@@ -11,7 +11,7 @@ body {
     padding-right: 15px;
     margin: 0px auto;
 
-    @media  screen and (min-width: 480px) {
+    @media  screen and (min-width: 480px) and (max-width: 767px)  {
       width: 480px;
     }
 
@@ -20,25 +20,55 @@ body {
       justify-content: flex-start;
       height: 80px;
       align-items: center;
+
+      @media screen and (min-width: 480px) and (max-width: 767px)  {
+        height: 60px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+      }
     }
 
     &--hero {
       padding-top: 200px;
       margin: 0 auto;
+    
+      @media screen and (min-width: 480px) and (max-width: 767px)  {
+        padding-top: 118px;
+        width: 480px;
+        height: 400px;
+      }
     }
 
     &--advantages {
       margin-bottom: 94px;
+      
+      @media screen and (min-width: 480px) and (max-width: 767px)  {
+        width: auto;
+        margin-bottom: 0;
+     }
     }
-  
+
+    &--team {
+      @media screen and (min-width: 480px) and (max-width: 767px)  {
+        width: auto;
+        display: block;
+      }
+    }
+
+    &--clients {
+      width: auto;
+    }
+
     &--footer {
       display: flex;
       padding-top: 60px;
+
+      @media screen and (min-width: 480px) and (max-width: 767px)  {
+        display: block;
+      }
     }
   }
 
 ul {
     list-style: none;
   }
-  
- 
