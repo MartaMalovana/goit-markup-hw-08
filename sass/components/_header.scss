@@ -1,19 +1,19 @@
 header {
     border-bottom: 1px solid #ececec;
-
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-      height: 60px;
-    }
+    width: 480px;
+    margin: 0;
+    position: relative;
+    height: 60px;
   }
 
 /*site-nav*/
 .site-nav {
-    display: flex;
+    display: none;
     align-items: center;
     margin-right: auto;
     
-    @media screen and (min-width: 480px) and (max-width: 767px)  {
-      display: none;
+    @media screen and (min-width: 480px) {
+      display: flex;
     }
   }
   
@@ -24,6 +24,7 @@ header {
    &__item:not(:last-child) {
         margin-right: 50px;
       }  
+
    &__link {
         display: inline-block;
         margin-top: 32px;
@@ -46,11 +47,33 @@ header {
         position: absolute;
         bottom: 0;
       }
+
+      &--container-hero {
+        font-size: 40px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: var(--secondary-text-color);
+        margin-top: 0;
       }
+    }
+
+      &__item--studio {
+        margin-bottom: 35.71px;
+      }
+
+      &__item--portfolio {
+        margin-bottom: 32px;
+      }
+      
+      &__item--contacts {
+        margin-bottom: 302px;
+      }
+
   
     &__link:hover,
     &__link:focus,
-    &__link.current  {
+    &__link--current {
       color: var(--accent-text-color);
     }
       
@@ -61,12 +84,12 @@ header {
  
 /*contacts*/
 .contacts {
-  display: flex;
+  display: none;
   padding-left: 0px;
   margin: 0px 0px 0px auto;
   
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-      display: none;
+    @media screen and (min-width: 480px) {
+      display: flex;
   }
 
   &__link {
@@ -106,3 +129,4 @@ header {
     transition: fill 250ms;
   }
 }
+

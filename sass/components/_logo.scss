@@ -1,26 +1,27 @@
 /*Лого хедер*/
 .logo {
     display: inline-block;
-    margin-right: 93px;
-    margin-top: 24px;
-    margin-bottom: 25px;
-    margin-left: 0px;
+    margin: 0;
     font-family: Raleway, sans-serif;
     color: #000000;
     text-decoration: none;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
-    line-height: 1.19;
+    line-height: 1.174;
     letter-spacing: 0.03em;
 
     &__web {
       color: var(--accent-text-color);
     }
 
-    @media screen and (min-width: 480px) and (max-width: 767px)   {
-      font-size: 24px;
-      line-height: 1.174;
-      margin: 0;
+    @media screen and (min-width: 480px)  {
+      font-size: 26px;
+      line-height: 1.19;
+      
+      margin-right: 93px;
+      margin-top: 24px;
+      margin-bottom: 25px;
+      margin-left: 0px;
     }
   }
   
@@ -29,13 +30,11 @@
     margin-top: 0px;
     margin-bottom: 20px;
     margin-right: auto;
-    margin-left: 0px;
+    margin-left: auto;
     color: var(--white-color);
+    line-height: 1.174;
 
-    @media screen and (min-width: 480px) and (max-width: 767px)  {
-     margin-right: auto;
-     margin-left: auto;
-     line-height: 1.174;
-      
+    @media screen and (min-width: 480px) {
+     margin-left: 40px;
     }
 }
