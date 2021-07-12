@@ -15,22 +15,27 @@
 
 .modal {
     position: absolute;
-    top: 93px;
-    left: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // top: 93px;
+    // left: 15px;
     width: 450px;
     height: 609px;
     background-color: var(--white-color);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-
-    @media screen and (min-width: 480px) {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 528px;
-      height: 581px;
+    
+    @media screen and (min-width: 768px) {
+      justify-content: center;
     }
+
+    @media screen and (min-width:1200px) {
+       width: 528px;
+       height:  581px;
+    }
+  
 
     &__form-field {
       padding: 40px;
@@ -80,7 +85,7 @@
       }
 
 .modal__textarea {
-  min-width: 448px;
+  width: 100%;
   min-height: 120px;
   margin-top: 4px;
   margin-bottom: 20px;

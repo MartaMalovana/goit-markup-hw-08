@@ -30,8 +30,19 @@ body {
       width: 100%;
       height: 60px;
 
+      @media  screen and (min-width: 480px) {
+        width: 480px;
+      }
+
+      @media  screen and (min-width: 768px) {
+        width: 768px;
+      }
+
       @media screen and (min-width: 1200px) {
-      height: 80px;
+        width: 1200px;
+        height: 80px;
+        padding-top: 24px;
+      padding-bottom: 25px;
       }
     }
 
@@ -46,43 +57,131 @@ body {
         width: 480px;
       }
 
+      @media screen and (min-width: 768px) {
+        width: 768px;
+      }
+
       @media screen and (min-width: 1200px) {
+        width: 1200px;
         padding-top: 200px; 
+        margin-left: auto;
+        margin-right: auto;
       }
     }
 
     &--advantages {
       width: 100%;
-      margin-bottom: 0 auto;
+      margin: 0 auto;
+
+      @media  screen and (min-width: 480px) {
+        width: 480px;
+      }
+
+      @media screen and (min-width: 768px) {
+        width: 768px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 1200px;
+      }
+    }
+
+    &--services {
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
     }
 
     &--team {
         width: 100%;
         display: block;
+
+        @media  screen and (min-width: 480px) {
+          width: 480px;
+        }
+
+        @media  screen and (min-width: 768px) {
+          width: 768px;
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        @media screen and (min-width: 1200px) {
+          width: 1200px;
+        }
     }
 
     &--clients {
       width: 100%;
       padding: 0;
+     display: block;
+
+      @media  screen and (min-width: 480px) {
+        width: 480px;
+      }
+
+      @media  screen and (min-width: 768px) {
+        width: 768px;
+      }
+
+     @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
     }
 
     &--footer {
       display: block;
       width: 100%;
+      align-items: flex-start;
 
-      @media screen and (min-width: 480px) and (max-width: 767px)  {
+      @media screen and (min-width: 480px) {
+        // display: flex;
+        // padding-top: 60px;
+        width: 480px;
+        
+      }
+
+      @media screen and (min-width:768px) {
+        width: 100%;
+      }
+
+      @media screen and (min-width:1200px) {
+        width: 1200px;
         display: flex;
-        padding-top: 60px; 
+        padding-top: 60px;
       }
     }
 
     &--filters-list {
       width: 480px;
+
+      @media screen and(min-width: 1200px) {
+        width: 1600px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+      }
     }
 
     &--portfolio {
       width: 480px;
+
+      @media screen and(min-width: 768px) {
+        width: 768px;
+        padding-left: 0;
+        padding-right: 0;     
+     }
+
+    @media screen and (min-width:1200px) {
+      width: 1600px;
+      margin-left: auto;
+      margin-right: auto;
+     
     }
+  }
   }
 
 ul {

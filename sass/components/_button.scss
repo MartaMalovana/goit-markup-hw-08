@@ -76,9 +76,9 @@
     align-items: center;
     justify-content: center;
 
-    @media screen and (min-width: 480px) { 
-      margin-left: 12px;
-    }
+    // @media screen and (min-width: 480px) { 
+    //   margin-left: 12px;
+    // }
   }
 
 .sign-form__icon {
@@ -162,3 +162,9 @@
 
   }
   
+  .menu-toggle {
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }

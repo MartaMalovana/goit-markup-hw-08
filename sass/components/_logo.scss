@@ -14,15 +14,18 @@
       color: var(--accent-text-color);
     }
 
-    @media screen and (min-width: 480px)  {
-      font-size: 26px;
-      line-height: 1.19;
+      @media screen and (min-width: 768px) {
+        margin-right: 88px;
+      }
+    // @media screen and (min-width: 480px)  {
+    //   font-size: 26px;
+    //   line-height: 1.19;
       
-      margin-right: 93px;
-      margin-top: 24px;
-      margin-bottom: 25px;
-      margin-left: 0px;
-    }
+    //   margin-right: 93px;
+    //   margin-top: 24px;
+    //   margin-bottom: 25px;
+    //   margin-left: 0px;
+    // }
   }
   
 /*Лого футер*/
@@ -34,7 +37,11 @@
     color: var(--white-color);
     line-height: 1.174;
 
-    @media screen and (min-width: 480px) {
-     margin-left: 40px;
+    @media screen and (min-width:1200px) {
+     margin-left: 0;
     }
+
+    // @media screen and (min-width: 480px) {
+    //  margin-left: 40px;
+    // }
 }

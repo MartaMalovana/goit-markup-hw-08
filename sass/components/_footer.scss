@@ -9,6 +9,15 @@ footer {
   @media screen and (min-width: 480px) {
     width: 480px;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width:1200px) {
+    width: 1600px;
+    height: 252px;
+  }
 }
 
 .footer-contacts {
@@ -18,8 +27,31 @@ footer {
     flex-direction: column;
     align-items: center;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    margin-right: 165px;
+    margin-left: 76px;
+  }
+
+  @media screen and (min-width:1200px) {
+    display: flex;
+    margin: 0;
+    padding-top: 0;
     margin-right: 70px;
+  
+  }
+}
+
+.connect {
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    flex-direction: column;
+  }
+ 
+  @media screen and (min-width:1200px) {
+    display: flex;
+    margin-right: 93px;
+
   }
 }
 
@@ -47,6 +79,11 @@ footer {
     font-weight: 400;
     line-height: 1.71;
     transition: color 250ms;
+    @media screen and (min-width:1200px) {
+      display: flex;
+      align-items: flex-start;
+    }
+  
 }
 
 .address__post-address {
@@ -66,6 +103,14 @@ footer {
   margin-top: 0px;
   margin-bottom: 0px;
   font-style: normal;
+
+  @media screen and (min-width:1200px) {
+    text-align: left;
+  }
+  @media screen and (min-width:1200px) {
+    text-align: left;
+  }
+
 }
 
 .address__list {
@@ -80,6 +125,10 @@ footer {
   color: var(--white-color);
   min-width: 100%;
  
+  
+  @media screen and (min-width:1200px) {
+    text-align: left;
+  }
 
     &--style:hover,
     &--style:focus {
@@ -91,9 +140,9 @@ footer {
       margin-bottom: 0px;
       padding-bottom: 0px;
 
-      @media screen and (min-width: 480px) {
-        padding-bottom: 60px;
-      }
+      // @media screen and (min-width: 480px) {
+      //   padding-bottom: 60px;
+      // }
     } 
 
     &--style {
@@ -106,9 +155,9 @@ footer {
       transition: color 250ms;
     } 
 
-    @media screen and (min-width: 480px) {
-      text-align: left;
-    }
+    // @media screen and (min-width: 480px) {
+    //   text-align: left;
+    // }
 }
 
 .sign-form {
@@ -116,6 +165,18 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  @media screen and (min-width:1200px) {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__title {
+    @media screen and(min-width: 1200px) {
+      // display: flex;
+      // justify-content: flex-start;
+    }
+  }
 
   &__input {
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -131,21 +192,33 @@ footer {
     padding-left: 16px;
     margin-bottom: 20px;
 
-    @media screen and (min-width: 480px) { 
-      min-width: 358px;
-    }
+    
+  @media screen and (min-width:1200px) {
+   width: 358px;
+   height: 50px;
+   margin-right: 12px;
+  }
+
+    // @media screen and (min-width: 480px) { 
+    //   min-width: 358px;
+    // }
   }
 
   &__block {
     display: block;
     justify-content: center;
+
+  @media screen and (min-width:1200px) {
+    display: flex;
+    flex-direction: row;
+  }
    
-    @media screen and (min-width: 480px) {
-      display: flex;
-    }
+    // @media screen and (min-width: 480px) {
+    //   display: flex;
+    // }
   }
 
-  @media screen and (min-width: 480px) {
-    margin-left: 93px;
-  }
+  // @media screen and (min-width: 480px) {
+  //   margin-left: 93px;
+  // }
 }
