@@ -155,7 +155,7 @@ body {
     }
 
     &--filters-list {
-      width: 480px;
+      width: 100%;
 
       @media screen and(min-width: 1200px) {
         width: 1600px;
@@ -167,7 +167,7 @@ body {
     }
 
     &--portfolio {
-      width: 480px;
+      width: 100%;
 
       @media screen and(min-width: 768px) {
         width: 768px;

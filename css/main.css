@@ -203,7 +203,7 @@ body {
 }
 
 .container--filters-list {
-  width: 480px;
+  width: 100%;
 }
 
 @media screen and (min-width: 1200px) {
@@ -217,7 +217,7 @@ body {
 }
 
 .container--portfolio {
-  width: 480px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -242,7 +242,7 @@ ul {
 
 header {
   border-bottom: 1px solid #ececec;
-  width: 480px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   height: 60px;
@@ -461,7 +461,7 @@ header {
 
 /*hero*/
 .hero {
-  width: 480px;
+  width: 100%;
   height: 400px;
   margin-right: auto;
   margin-left: auto;
@@ -725,7 +725,7 @@ header {
 
 /*advantages*/
 .advantages {
-  width: 480px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -930,7 +930,7 @@ header {
 .team {
   background-color: #f5f4fa;
   padding-top: 60px;
-  width: 480px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1028,8 +1028,7 @@ header {
 
 .team__member-photo {
   margin-bottom: 30px;
-  width: 450px;
-  height: 460px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1119,7 +1118,7 @@ header {
 
 .clients {
   padding-top: 60px;
-  width: 480px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1209,7 +1208,7 @@ header {
 footer {
   background-color: var(--dark-background-color);
   color: var(--white-color);
-  width: 480px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1239,6 +1238,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1256,6 +1256,10 @@ footer {
     padding-top: 0;
     margin-right: 70px;
   }
+}
+
+.connect {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1381,6 +1385,7 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1394,7 +1399,7 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  width: 450px;
+  width: 100%;
   min-height: 50px;
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
@@ -1416,6 +1421,7 @@ footer {
 .sign-form__block {
   display: block;
   justify-content: center;
+  width: 100%;
 }
 
 @media screen and (min-width: 1200px) {
